@@ -7,4 +7,38 @@ body {display:flex; width:100%; min-height:100%; flex-direction:column;}
 *::-webkit-scrollbar-track {background-color:#e6e6e6; border-radius:0px; box-shadow:inset 0px 0px 2px white;}
 
 .mainBox {display:flex; flex-direction:column; max-width:1920px; max-height:1080px; margin:auto auto; width:100%; height:100%; background-color:#FFFFFF;}
-.LoginBox {display:flex; width:100%; height:100%; justify-content:center; align-items:center;}
+.LoginBox {
+  display:flex; flex-direction:column; width:auto; height:auto; padding:40px 50px; justify-content:center; align-items:center; background-color:#f4f4f4; margin:auto auto;
+  border-radius:35px; box-shadow:15px 15px 30px rgba(0,0,0,0.15);
+  .LoginInputBox {
+    display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; margin-bottom:15px;
+    .LgTitle {display:flex; font-size:16px; font-weight:700; color:#333333; margin-bottom:5px;}
+    .inputItem {display:inline-flex; width:360px; height:50px; padding:0 15px; border-radius:10px; border:1px solid #e3e3e3; font-size:14px; color:#777777;}
+    .inputItem::placeholder {color:#cccccc;}
+  }
+  .radioType {
+    display:flex; width:100%; flex-direction:row; justify-content:flex-start; align-items:flex-start; margin-top:5px;
+    .radioCont {
+      display:flex; flex-direction:row; justify-content:flex-start; align-items:center; margin-right:15px;
+      &:last-of-type {margin-right:none;}
+      .radioItem {width:14px; height:14px;}
+      .RdTitle {margin-left:5px; line-height:1; font-size:14px;}
+    }
+  }
+}
+
+
+/* button Box */
+.btnBox {
+  display:flex; flex-direction:row; width:100%; justify-content:center; align-items:center; margin-top:15px;
+  button {
+    min-width:120px; padding:14px 28px 15px; font-size:16px; border-radius:10px; border:1px solid #e3e3e3; line-height:1;
+    &.btnType1 {border:1px solid #44546A; background-color:#44546A; color:#FFFFFF;}
+  }
+}
+
+/* anker Box */
+.ankerBox {
+  display:flex; flex-direction:row; width:100%; justify-content:center; align-items:center; margin-top:25px;
+  .ankerItem {display:flex; line-height:1; color:#44546A; font-size:12px; text-decoration:underline;}
+}
